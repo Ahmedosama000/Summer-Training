@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num_factorial(n){
+            var nums = []
+            var result = 1
+
+            for (let i = 1; i <= n; i++) {
+                nums.push(i)
+            }
+            for (let i = 0; i < nums.length; i++) {
+                result *= nums[i]
+            }
+            return result
+        }
+    </script>
+</body>
+</html>
