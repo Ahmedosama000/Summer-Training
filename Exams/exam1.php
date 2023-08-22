@@ -79,7 +79,6 @@ print_r(remove(1,2,3,4,5,6,67,8,1,1,2,3,3,4));
 <!-- 6 -->
 
 <?php 
-
 class Animal {
     private string $name ;
 
@@ -87,17 +86,20 @@ class Animal {
         $this->name = $name ;
     }
     public function toString():void {
-        echo " Animal name is $name . ";
+        if ($this->name == 'cat'){
+            echo 'Meow';
+        }
+        elseif ($this->name == 'dog'){
+            echo 'Woof';
+        }
     }
 }
-
-$cat = new Animal();
-$dog = new Animal();
+$cat = new Animal('cat');
+$dog = new Animal('dog');
 
 echo $cat-> toString();
-
-
-
+echo '<br>';
+echo $dog-> toString();
 ?>
 <!-- ############################################################ -->
 <!-- Question 3 : True Or False  -->
