@@ -82,29 +82,32 @@ print_r(remove(1,2,3,4,5,6,67,8,1,1,2,3,3,4));
 class Animal {
     private string $name ;
 
-    public function animal(string $name){
+    public function  __construct(string $name){
         $this->name = $name ;
     }
-    public function toString():void {
+    public function toString(){
         echo $this->name;
     }
 }
-class Mammal Extends Animal {
+class Mammal extends Animal {
 }
-class cat Extends Mammal {
+class cat extends Mammal {
     public function greets():void{
         echo 'Meow';
     }
 }
-class dog Extends Mammal {
+class dog extends Mammal {
     public function greets():void{
         echo 'Woof';
     }
 }
 
-$cat = new cat() ;
+$cat = new cat('cat') ;
 $cat->greets();
+echo '<br>';
+$cat->toString();
 ?>
+
 <!-- ############################################################ -->
 <!-- Question 3 : True Or False  -->
 
