@@ -1,3 +1,5 @@
+// How to display data after submitting ? 
+
 <?php
 
 $hostname = 'localhost';
