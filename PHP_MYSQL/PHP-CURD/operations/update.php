@@ -11,8 +11,6 @@ $salary = $row['salary'];
 $address = $row['address'];
 $gender = $row['gender'];
 
-//UPDATE `employees` SET `name` = 'Selwann' WHERE `employees`.`id` = 2;
-
 if(isset($_POST['edit_employee'])) {
     $new_name = $_POST['name'];
     $new_salary = $_POST['salary'];
